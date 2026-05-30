@@ -12,6 +12,7 @@ const Drinks2 = () => {
 
     const addDrink = () => {
         const newDrink = inputValue;
+        setDrinks([...drinks,newDrink]);
         setInputValue('');
     }
 
@@ -24,7 +25,12 @@ const Drinks2 = () => {
                 value={inputValue}
                 onChange={inputValueChange}
             />
-            
+            <button onClick={addDrink}>음료추가</button>
+            <ul>
+                {drinks.map((drink, index) => (
+                    <li key={index}>{drink}</li>
+                ))}
+            </ul>
         </div>
     )
 }

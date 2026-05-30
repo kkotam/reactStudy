@@ -4,7 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Counter from './compnents/Counter'
-/mport Car from './compnents/Car'
+import Car from './compnents/Car'
 import Drinks2 from './compnents/Drinks2'
 
 function App() {
