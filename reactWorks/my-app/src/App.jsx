@@ -7,6 +7,10 @@ import Example02 from './components/Example02'
 import Test01 from './components/Test01'
 import Header from './practice/Header'
 import Example03 from './components/Example03'
+import Inputvalue from './components/Inputvalue'
+import Test02 from './practice/Test02'
+import Dog from './components/Dog'
+import Dog2 from './components/Dog2'
 
 function MyButton(){
   return (
@@ -30,7 +34,15 @@ function App() {
           {/* <Example02 /> */}
           {/* <Test01 /> */}
           {/* <Header /> */}
-          <Example03 />
+          {/* <Test02 /> */}
+          <Dog
+            breed="말티즈"
+            age={3}
+          />
+          <Dog2
+            breed="진돗개"
+            age={1}
+          />
         </section>
 
         <section>
