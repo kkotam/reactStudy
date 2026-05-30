@@ -1,0 +1,38 @@
+.container{
+    /*height: inherit;
+    */
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+        h2{
+            /* 16진수 색상표기 */
+            color: #ff0000;
+
+        }
+        p{
+            line-height: 2;
+            font-family:  바탕체;
+        }
+        #p1{
+            background-color: green;
+        }
+        #p2{
+            background-color: yellow;
+        }
+
+        #loginform{
+            width: 330px;
+            border: 1px solid;
+
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            /* top right left bottom*/
+            margin: 20px 15px;
+        }
+
+

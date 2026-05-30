@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화살표 함수</title>
+</head>
+<body>
+    <script>
+        function threeTimes(x){
+            return 3* x;
+
+        }
+
+        console.log(threeTimes(10));
+
+        //익명함수 @@@@
+        /*
+        function times4(x){
+            return 4 * x;
+
+        }
+        */
+        
+        let times4 =(x) => {
+            return 4 * x;
+        }
+
+        console.log(times4(10));
+
+        // ======================//매개변수 2
+        let total =(x,y) => {
+            return x * y;
+        }
+
+        console.log(total(10,20));
+
+        //=======================//매개변수 0
+        let message =() => {
+            return "행운을 빌어요!!";
+        }
+        console.log(message());
+    </script>
+    
+</body>
+</html>

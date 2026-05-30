@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다중조건문</title>
+    <style>
+        .display{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2> 신호등 프로그램</h2>
+    <div id="result"></div>
+    <button onclick="checkColor()">판별하기</button>
+    <script>
+        // dom(document of model) 사용
+
+        function checkColor(){
+
+            //let color = "red"
+            let color = prompt("신호등 색상을 입력하세요(red, green, yellow)");
+            const result = document.getElementById("result")
+
+            if(color == null){
+                result.innerText = "입력이 취소되었습니다";
+                result.style.color = "red";
+
+            }else{
+                if(color == "red"){
+                    //
+                    result.innerText = "멈춤";
+
+                }else if(color == "yellow"){
+                    result.innerText = "준비";
+
+                }else if(color == "green"){
+                    result.innerText = "진행";
+
+                }else{
+                    result.innerHTML = "알 수 없는 색상입니다. <br> \
+                    red, yellow, green  중 하나를 입력하세요!";
+
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

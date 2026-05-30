@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 반환값이 있는 함수</title>
+</head>
+<body>
+    <h2>반환값이 있는 함수</h2>
+    <div id="demo"></div>
+
+    <script>
+        let demo = document.getElementById("demo");
+        function message(){
+            // return "Good luck!";
+            return demo.innerHTML = "Good luck!";
+        }
+
+        console.log(message());
+
+    </script>
+</body>
+</html>
